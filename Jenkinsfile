@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3-alpine' 
+            image 'maven:latest'
             args '-v /var/services/homes/pfs/maven/repos:/root/.m2'
         }
     }
