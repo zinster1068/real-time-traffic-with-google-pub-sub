@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3032f0b0-1946-4a5a-b7d6-7abc29e6a7de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-    </list>
+    <list default="true" id="3032f0b0-1946-4a5a-b7d6-7abc29e6a7de" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +13,7 @@
     <session id="-962335680">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -28,7 +25,7 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="81" />
+          <entry key="PLAIN_TEXT" value="175" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -42,7 +39,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Jenkinsfile" value="6" />
-          <entry key="txt" value="75" />
+          <entry key="txt" value="169" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -54,6 +51,7 @@
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -200,7 +198,7 @@
       <workItem from="1536065066509" duration="32000" />
       <workItem from="1536065119160" duration="1631000" />
       <workItem from="1539738303241" duration="337000" />
-      <workItem from="1539776285769" duration="13000" />
+      <workItem from="1539776285769" duration="269000" />
     </task>
     <task id="LOCAL-00001" summary="Initial update">
       <created>1536067342910</created>
@@ -223,11 +221,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539738385167</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed Jenkins file from using maven:3-alpine docker image to maven:latest docker image.">
+      <created>1539776354371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539776354371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2013000" />
+    <option name="totallyTimeSpent" value="2269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1628" y="-21" width="1439" height="877" extended-state="0" />
@@ -278,7 +283,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial update" />
     <MESSAGE value="Changed the docker arguments to use a valid directory on NAS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the docker arguments to use a valid directory on NAS." />
+    <MESSAGE value="Changed Jenkins file from using maven:3-alpine docker image to maven:latest docker image." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Jenkins file from using maven:3-alpine docker image to maven:latest docker image." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
