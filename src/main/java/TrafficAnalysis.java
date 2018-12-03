@@ -4,19 +4,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.FileInputStream;
 import java.util.concurrent.TimeUnit;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
 
-public class Main
+public class TrafficAnalysis
 {
     public static Properties applicationProperties;
 
-    public Main()
+    public TrafficAnalysis()
     {
 
     }
@@ -92,7 +87,7 @@ public class Main
                     }
                     catch (Exception e)
                     {
-                        System.out.println("sendSegments:  Exception caught");
+                        System.out.println("sendSegments:  Exception caught.  Is the resource ID correct when calling ChicagoSegments.loadSegments on line 75?");
                         e.printStackTrace();
                     }
                 }
