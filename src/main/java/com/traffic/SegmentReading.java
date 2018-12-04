@@ -1,5 +1,31 @@
 package com.traffic;
 
+/*
+    The SegmentReading class stores one traffic reading.
+
+    Data
+        SegmentID   -   Unique ID used to identify the segment
+        Street      -   Street name where the traffic reading was taken
+        Direction   -   The direction of the traffic
+        FromStreet  -   The starting cross street
+        ToStreet    -   The ending cross street
+        Length      -   The distance from the FromStreet to the ToStreet
+        StreetHeading   -   The street's direction
+        Comments        -   Any comments
+        StartLongitude  -   The starting longitude of where the traffic reading starts
+        StartLatitude   -   The starting latitude of where the traffic reading starts
+        EndLongitude    -   The ending longitude of where the traffic reading ends
+        EndLatitude     -   The ending latitude of where the traffic reading ends
+        CurrentSpeed    -   The current speed of the traffic segment
+        LastUpdated     -   When the traffic reading was updated
+
+    Methods
+        SegmentReading  -   Class constructor that requires the attributes that will be stored.
+        describe        -   Method that outputs the object's attributes to the console.
+
+    Notes
+        None
+ */
 public class SegmentReading
 {
     String SegmentID;
