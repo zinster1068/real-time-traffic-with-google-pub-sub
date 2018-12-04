@@ -66,8 +66,11 @@ public class TrafficAnalysis
 
             while(true)
             {
+                // Uncomment this line to load the Chicago traffic segments from a flat file.  Location and filename of the data file is defined in the resources/config.properties files.
                 //loadSuccess = ChicagoSegments.loadSegments(1);
-                loadSuccess = ChicagoSegments.loadSegments("<Insert data.cityofchicago.org resourceID here>");
+
+                // Uncomment this line to load the Chicago traffic segments from data.cityofchicago.org website.
+                loadSuccess = ChicagoSegments.loadSegments("8v9j-bter");
 
                 if (loadSuccess)
                 {
