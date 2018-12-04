@@ -67,7 +67,7 @@ public class TrafficAnalysis
             while(true)
             {
                 //loadSuccess = ChicagoSegments.loadSegments(1);
-                loadSuccess = ChicagoSegments.loadSegments("<Insert Resource ID from data.cityofchicago.org>");
+                loadSuccess = ChicagoSegments.loadSegments("8v9j-bter");
 
                 if (loadSuccess)
                 {
