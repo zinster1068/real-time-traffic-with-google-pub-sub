@@ -67,7 +67,7 @@ public class TrafficAnalysis
             while(true)
             {
                 //loadSuccess = ChicagoSegments.loadSegments(1);
-                loadSuccess = ChicagoSegments.loadSegments("8v9j-bter");
+                loadSuccess = ChicagoSegments.loadSegments("<Insert data.cityofchicago.org resourceID here>");
 
                 if (loadSuccess)
                 {
@@ -87,7 +87,7 @@ public class TrafficAnalysis
                     }
                     catch (Exception e)
                     {
-                        System.out.println("sendSegments:  Exception caught.  Is the resource ID correct when calling ChicagoSegments.loadSegments on line 75?");
+                        System.out.println("sendSegments:  Exception caught.  Is the resource ID correct when calling ChicagoSegments.loadSegments on line 90?");
                         e.printStackTrace();
                     }
                 }
