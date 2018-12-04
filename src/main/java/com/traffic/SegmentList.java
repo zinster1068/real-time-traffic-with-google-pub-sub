@@ -30,6 +30,27 @@ import com.socrata.model.soql.SoqlQuery;
 import com.sun.jersey.api.client.ClientResponse;
 
 
+/*
+    The SegmentList class is a list of traffic segments (SegmentReading class) that are populated from a local data file or the data.cityofchicago.org API
+
+    Data
+        PROJECT_ID  -   Google project ID.  Populated using the local default project ID as defined by the gcloud setup.
+        segments    -   A hash table that holds each traffic segment.  The key is the segment ID.
+        sourceFile  -   The data filename when loading segments from a local file.
+        msgTopicName    -   The Google Pub/Sub topic name to send the segment information to.
+        sourceURL       -   The datasource URL when loading the data from data.cityofchicago.org API.
+
+    Methods
+        SegmentList(String p_sourceFile, String p_sourceURL, String p_msgTopicName) -   Class constructor
+        getSegments                                                                 -   Method that will return a hash table to the traffic segments
+        deleteAllSegments                                                           -   Method that will remove all the traffic segments
+        loadSegments(String p_resourceID)                                           -   Overloaded method that will load the traffic segments from the specified resource ID.
+        loadSegments(int p_startRow)                                                -   Overloaded method that will load the traffic segments form the local filesystem.
+        sendSegments()                                                              -   Method that will send the traffic segments to the specified Google Pub/Sub topic.
+
+    Notes
+        This class uses Socrata Open Data API to pull information from the data.cityofchicago.org API.  More information on this Open Data API can be found at https://dev.socrata.com
+ */
 
 public class SegmentList
 {
